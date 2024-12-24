@@ -3,16 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ringraziamenti</title>
+    <meta name="description" content="Un regalo speciale per te: il biglietto per il concerto di Liberato!">
+    <title>Regalo: Concerto di Liberato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #333; }
-        p { font-size: 1.1em; }
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #000, #333);
+        }
+
+        header {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            background: #e63946;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #d62839;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .info div {
+            background: #444;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .gift-message {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #eee;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: #e63946;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    TEST VIDEO
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S1yszOtBW4w&list=PLP5MAKLy8lP-x-Ust2YGwspgt4wMJBFXJ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+    <header>
+        <div>
+            <h1>Il tuo regalo speciale!</h1>
+            <p>Un biglietto per il concerto di <span class="highlight">Liberato</span>!</p>
+            <p class="gift-message">Prepara le emozioni e goditi uno spettacolo indimenticabile il <span class="highlight">24 Giugno 2024</span> presso lo <span class="highlight">Stadio Diego Armando Maradona</span> a Napoli.</p>
+            <a href="#info" class="btn">Scopri di più</a>
+        </div>
+    </header>
+
+    <section id="info">
+        <h2>Dettagli del tuo regalo</h2>
+        <div class="info">
+            <div>
+                <h3>Data</h3>
+                <p>24 Giugno 2024</p>
+            </div>
+            <div>
+                <h3>Location</h3>
+                <p>Stadio Diego Armando Maradona, Napoli</p>
+            </div>
+            <div>
+                <h3>Orario</h3>
+                <p>Ore 21:00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Il tuo regalo | <a href="#">Termini e Condizioni</a></p>
+    </footer>
 </body>
 </html>
