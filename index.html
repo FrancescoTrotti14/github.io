@@ -33,48 +33,20 @@
         .gift-box {
             width: 200px;
             height: 200px;
-            background: linear-gradient(135deg, #e63946, #d32f2f);
-            position: relative;
             cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        }
+
+        .gift-box img {
+            width: 100%;
+            height: auto;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .gift-box:hover {
+        .gift-box img:hover {
             transform: scale(1.1);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
-        }
-
-        .gift-box:before, .gift-box:after {
-            content: '';
-            position: absolute;
-            background: #fff;
-            border-radius: 5px;
-        }
-
-        .gift-box:before {
-            width: 100%;
-            height: 20px;
-            top: 90px;
-        }
-
-        .gift-box:after {
-            width: 20px;
-            height: 100%;
-            left: 90px;
-        }
-
-        .ribbon {
-            position: absolute;
-            top: -10px;
-            width: 80px;
-            height: 40px;
-            background: #fff;
-            clip-path: polygon(50% 0, 100% 100%, 0 100%);
         }
 
         .reveal {
@@ -120,7 +92,7 @@
     <header>
         <h1>Christiana, c'è un regalo per te!</h1>
         <div class="gift-box" onclick="revealGift()">
-            <div class="ribbon"></div>
+            <img src="/png-clipart-gift-box-miscellaneous-ribbon.png" alt="Pacco regalo">
         </div>
     </header>
 
